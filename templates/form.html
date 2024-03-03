@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NGL Spammer</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1 class="header-title">NGL Spammer</h1>
+    <form action="/submit" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="mode">Mode:</label><br>
+        <input type="radio" id="mode1" name="mode" value="1">
+        <label for="mode1">1.Random Text</label><br>
+        <input type="radio" id="mode2" name="mode" value="2">
+        <label for="mode2">2.Custom Teks</label><br>
+        <label for="length">Length of text (Mode 1):</label><br>
+        <input type="text" id="length" name="length"><br>
+        <label for="times">Number of times to send:</label><br>
+        <input type="text" id="times" name="times"><br>
+        <label for="text">Text to send (Mode 2):</label><br>
+        <input type="text" id="text" name="text"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
